@@ -1,12 +1,13 @@
 {
-  "name": "iMessage-backup",
-  "version": "0.0.1",
+  "name": "imessage-backup",
+  "version": "0.0.2",
   "description": "Creates an HTML file with a backup of all iMessages (and attachments) sent and received between a given account/number.",
   "dependencies": {
-    "async": "^2.0.0-rc.3",
-    "commander": "^2.9.0",
-    "guid": "0.0.12",
-    "handlebars": "^4.0.5",
-    "sqlite3": "^3.1.3"
+    "async": "^3.2.0",
+    "commander": "^6.2.1",
+    "handlebars": "^4.7.6",
+    "sqlite3": "^5.0.0",
+    "strftime": "^0.10.0",
+    "uuid": "^8.3.2"
   }
 }

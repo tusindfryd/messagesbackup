@@ -1,3 +1,14 @@
+In this fork I managed to break this project really badly but also make it somehow work with the changed way the backups are stored. As I am writing this on December 18th, 2020, there is no handy `chat.db` file anymore with the complimentary `Attachments` folder. Instead there is an ominous file called `3d0d7e5fb2ce288813306e4d4636395e047a3d28` stored somewhere in the `Apple > MobileSync > Backup` folder. These are the chatlogs. I did not manage to access the attachments, so this will only export texts. Also some emojis are broken.
+
+## Changes ##
+- The file with chatlogs is required:
+`node exportMessages.js [options] <chatlogs> <accountId>`
+- Optional `-h --header` flag to show a header in the exported file.
+- Specify the contact name with the optional `-t --tag <tag>` argument.
+- `-l --limit <n>` will not export export exactly n messages, but at most n messages. That is because of issues with attachments.
+
+---
+
 # iMessage Backup #
 
 ## Purpose ##
